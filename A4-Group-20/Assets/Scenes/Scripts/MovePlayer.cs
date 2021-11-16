@@ -16,10 +16,15 @@ public class MovePlayer : MonoBehaviour
 
     private float directionY;
 
+    public GameObject startLevel;
+    private Vector3 startLevelPos;
+
     // Start is called before the first frame update
     void Start()
     {
         cc = gameObject.GetComponent<CharacterController>();
+        startLevelPos = startLevel.transform.position;
+        transform.position = startLevelPos;
     }
 
     // Update is called once per frame
