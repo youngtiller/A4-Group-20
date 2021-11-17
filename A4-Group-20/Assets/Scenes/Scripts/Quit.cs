@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hi : MonoBehaviour
+public class Quit : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,4 +15,10 @@ public class hi : MonoBehaviour
     {
         
     }
+
+    public void Exit()
+    {
+            Application.Quit();
+    }
+
 }
