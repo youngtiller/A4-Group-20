@@ -17,7 +17,10 @@ public class Coin : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject) ;
+        Score.coinsCollected+=1;
+        Destroy(gameObject);
+        print("hit");
 
     }
+
 }
