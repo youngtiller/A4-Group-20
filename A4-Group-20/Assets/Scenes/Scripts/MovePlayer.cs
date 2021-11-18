@@ -31,8 +31,9 @@ public class MovePlayer : MonoBehaviour
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput *= -1;
         float verticalInput = Input.GetAxis("Vertical");
-
+        verticalInput *= -1;
         Vector3 direction = new Vector3(horizontalInput, 0, verticalInput);
 
         if(Input.GetButtonDown("Jump")){
